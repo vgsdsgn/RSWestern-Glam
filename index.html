@@ -1,51 +1,87 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Western Glam</title>
+
 <style>
-  body {
-    margin: 0;
-    background: #f5f1ea;
-    display: flex;
-    justify-content: center;
-  }
-  img {
-    width: 100%;
-    max-width: 1080px;
-    height: auto;
-  }
+
+body{
+margin:0;
+background:#f5f5f5;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+font-family:sans-serif;
+}
+
+.poster{
+position:relative;
+width:100%;
+max-width:500px;
+}
+
+.poster img{
+width:100%;
+display:block;
+}
+
+/* botones invisibles */
+.btn{
+position:absolute;
+display:block;
+}
+
+/* SPOTIFY (sticker superior derecho) */
+.spotify{
+top:12%;
+left:62%;
+width:30%;
+height:12%;
+}
+
+/* MAPS (dirección) */
+.maps{
+top:43%;
+left:48%;
+width:42%;
+height:9%;
+}
+
+/* RSVP */
+.rsvp{
+top:54%;
+left:56%;
+width:30%;
+height:9%;
+}
+
 </style>
 </head>
+
 <body>
 
-<img src="invitacion.jpg" usemap="#westernmap" style="width:100%; height:auto;">
+<div class="poster">
 
-<map name="westernmap">
+<img src="invitacion.jpg">
 
-  <!-- Spotify -->
-  <area shape="circle"
-  coords="870,520,200"
-  href="https://open.spotify.com/playlist/4z4AdJMMr3hLfDm2n94Kc2?si=Atdqll9fRq6KYoPxGYpOPg&pi=0114Z24bTsulM&pt=09849a469957fe6eeadd0f4fb500ee5e"
-  target="_blank">
+<a class="btn spotify" 
+href="PON_AQUI_TU_LINK_DE_SPOTIFY" 
+target="_blank"></a>
 
-  <!-- Maps -->
-  <area shape="rect"
-  coords="300,980,780,1280"
-  href="https://maps.app.goo.gl/efXqeSoKebZLLcYC9"
-  target="_blank">
+<a class="btn maps" 
+href="PON_AQUI_TU_LINK_DE_MAPS" 
+target="_blank"></a>
 
-  <!-- WhatsApp RSVP -->
-  <area shape="rect"
-  coords="360,1180,720,1500"
-  href="https://wa.me/5216121761131?text=Confirmo%20mi%20asistencia%2C%20let%27s%20show%20off%20our%20Western%20Glam%21%21%20%F0%9F%8C%B5%F0%9F%A5%82%E2%9C%A8"
-  target="_blank">
+<a class="btn rsvp" 
+href="PON_AQUI_TU_LINK_DE_WHATSAPP" 
+target="_blank"></a>
 
-</map>
+</div>
 
 </body>
 </html>
-
-
-
